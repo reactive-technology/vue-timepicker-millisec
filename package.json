@@ -1,0 +1,76 @@
+{
+  "name": "vue-timepicker-millisec",
+  "version": "0.1.0",
+  "description": "handy timepicker based on html5 with optional milliseconds",
+  "scripts": {
+    "dev": "cd demo && yarn serve",
+    "dev:init": "cd demo && yarn install",
+    "build": "vue-cli-service build --target lib --name VueTimepicker ./src/index.js",
+    "build:demo": "cd demo && yarn build"
+  },
+  "main": "dist/VueTimepicker.umd.js",
+  "module": "dist/VueTimepicker.common.js",
+  "unpkg": "dist/VueTimepicker.umd.min.js",
+  "css": "dist/VueTimepicker.css",
+  "browser": {
+    "./sfc": "src/vue-timepicker.vue"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xx/vue2-timepicker.git"
+  },
+  "keywords": [
+    "vue",
+    "vue2",
+    "time",
+    "picker",
+    "dropdown",
+    "input",
+    "UI"
+  ],
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "babel-eslint": "^10.0.3",
+    "core-js": "^2.6.9",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.5"
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.json",
+    "*.md"
+  ],
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "author": "Benamar BELARBI <benamarbelarbi@yahoo.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xxx/timepicker/issues"
+  },
+  "homepage": "https://github.com/xx/vue-timepicker#readme"
+}
