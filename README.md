@@ -30,7 +30,7 @@ npm install vue2-timepicker-millisec --save
 ```html
 <!-- Show seconds picker -->
 <vue-timepicker-millisec showmillisec/>
-
+```
 
 ## Data Binding
 
